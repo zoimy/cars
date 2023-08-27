@@ -8,7 +8,6 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
-      'hero__title':'hero',
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
