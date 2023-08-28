@@ -6,7 +6,8 @@ import '../app/global.css'
 
 const Hero = () => {
     const handleScroll = () => {
-
+			console.log('scroll');
+			
     }
 
   return (
@@ -21,6 +22,7 @@ const Hero = () => {
                 </p>
 
             <CustomButton
+						btnType='button'
             title='Explore cars'
             containerStyles='bg-primary-blue text-white rounded-full mt-10'
             handleClick={handleScroll}
