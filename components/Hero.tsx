@@ -6,13 +6,12 @@ import '../app/global.css'
 
 const Hero = () => {
     const handleScroll = () => {
-			console.log('scroll');
-			
+
     }
 
   return (
     <div className='hero'>
-        <div className=' flex-1 pt-36'>
+        <div className=' flex-1 pt-36 pl-16'>
                 <h1 className='hero__title'>
                     Find, book, or rent a car - quickly and easily!
                 </h1>
@@ -22,7 +21,7 @@ const Hero = () => {
                 </p>
 
             <CustomButton
-						btnType='button'
+            btnType='button'
             title='Explore cars'
             containerStyles='bg-primary-blue text-white rounded-full mt-10'
             handleClick={handleScroll}
