@@ -16,7 +16,7 @@ const CarCard = ({car}: ICarCardProps) => {
 
 	const [isOpen, setIsOpen]=  useState(false)
 
-	const carRent = 	calculateCarRent(city_mpg, year)
+	const carRent = calculateCarRent(city_mpg, year)
 	return (
 		<div className='car-card group'>
 			<div className="car-card__content">
@@ -59,7 +59,7 @@ const CarCard = ({car}: ICarCardProps) => {
 					<CustomButton btnType='button' title='View More' containerStyles='w-full py-[16px] rounded-full bg-primary-blue' textStyles='text-white text-[14px] leading-[17px] font-bold' rightIcon='/right-arrow.svg' handleClick={() => setIsOpen(true)}/>
 				</div>
 
-				<CarDetails/>
+				<CarDetails isOpen={isOpen} closeModal={() => setIsOpen(false)} car={car}/>
 			</div>
 		</div>
 	)

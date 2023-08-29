@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CarDetails = () => {
+const CarDetails = ({}) => {
 	return (
 		<div>CarDetails</div>
 	)
